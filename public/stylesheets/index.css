@@ -1,0 +1,181 @@
+html, .index {
+    height: 100%;
+}
+
+.index {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.index, .index form {
+    display: flex;
+    flex-direction: column;
+}
+
+.index main {
+    width: 285px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.index h1 {
+    margin: 15px auto;
+}
+
+.index .logueado {
+    height: 225px;
+    display: flex;
+    padding: 10px;
+    background-color: rgba(356,356,356,.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.index .logueado h1 {
+    font-size: 22px;
+}
+
+.index .center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.index form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index form .form-input {
+    width: 80%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.index form .form-input label {
+    margin-left: 4px;
+}
+
+.index form .form-input.center {
+    align-items: center;
+}
+
+.index form .form-input.row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.index form .form-input input, .index form .form-input select {
+    border: 1px solid #878787;
+    border-radius: 10px;
+    width: 100%;
+    height: 28px;
+}
+
+.index form .form-input input:focus, .index form .form-input select:focus {
+    border-width: 2px;
+    border-color: rgba(63, 217, 255, 0.8);
+    box-shadow: 0 1px 1px rgba(197, 197, 197, 0.075) inset,
+    0 0 8px rgba(197, 197, 197, 0.075);
+    outline: 0 none;
+}
+
+.index form .form-input select option {
+    cursor: pointer;
+}
+
+.index .form-input select option[value="Orange"] {
+    background: Orange;
+}
+
+.index form .form-input select option[value="Pink"] {
+    background: Pink;
+}
+
+.index form .form-input select option[value="SkyBlue"] {
+    background: SkyBlue;
+}
+
+.index form .form-input.row input {
+    width: 16px;
+}
+
+.index form .form-input small {
+    display: block;
+    color: red;
+}
+
+.index form .form-input button {
+    width: 100px;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 20px;
+}
+
+.index form .form-input button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.index form .form-input button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.index form .form-input.center a {
+    margin-bottom: 10px;
+}
+
+.index form .form-input.center a:hover {
+    text-decoration: underline;
+}
+
+.index form .form-input.center a:active {
+    text-decoration: underline;
+}
+
+
+@media(min-width: 768px) {
+
+    .index main {
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .index form .form-input {
+        width: 70%;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .index h1 {
+        margin: 20px auto;
+    }
+
+    .index .logueado {
+        height: 275px;
+        width: 400px;
+    }
+
+    .index .logueado h1 {
+        font-size: 24px;
+    }
+}
